@@ -4,26 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Retangulo
+namespace Produto
 {
     internal class Retangulo
     {
         public double Largura;
-        public int Altura;
+        public double Altura;
+        public double Tamanho;
 
 
-        public double tamanho() { return Largura;}
- 
-        
-        public double perimetro () {
-
-            return $"Largura, Altura";
-
-
-
+        public string perimetro()
+        {
+            Tamanho = 2 + (Largura * Altura);
+            return $"Largura{perimetro}, Altura{}";
 
         }
+
 
     }
 
 }
+
